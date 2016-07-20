@@ -146,56 +146,102 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
-.navbar-custom {
-  background-color: #222222;
-  border-color: transparent;
+
+.btn-custom {
+  background-color: #2ABED8;
+  border-color: #2ABED8;
 }
-.navbar-custom .navbar-brand {
-  color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #24adc5;
+  border-color: #209aaf;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: #fec503;
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #2ABED8;
+  border-color: #2ABED8;
 }
-.navbar-custom .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02);
+
+.navbar-default {
+  background-color: #2abed8;
+  border-color: #2abed8;
 }
-.navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 12px;
+.navbar-default .navbar-brand {
+  color: #ffffff;
 }
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #dddddd;
 }
-.navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: white;
+.navbar-default .navbar-text {
+  color: #ffffff;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
-  color: #fed136;
-  outline: none;
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
 }
-.navbar-custom .navbar-nav > .active > a {
-  border-radius: 0;
-  color: white;
-  background-color: #fed136;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #dddddd;
 }
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #fec503;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #dddddd;
+  background-color: #2abed8;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #dddddd;
+  background-color: #2abed8;
+}
+.navbar-default .navbar-toggle {
+  border-color: #2abed8;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #2abed8;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #dddddd;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #dddddd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #dddddd;
+    background-color: #2abed8;
+  }
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -218,7 +264,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #2abed8;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
